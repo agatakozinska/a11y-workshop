@@ -1,11 +1,49 @@
 :root {
     --yellow-color: #ffc500;
-}
-
-.test {
-    color: red;
+    --purple-color: #520044;
+    --white-color: #fff;
 }
 
 .link {
     color: var(--yellow-color);
+}
+
+.container {
+    display: flex;
+    gap: 20px;
+    width: 200px;
+    margin: 50px auto;
+}
+
+.button {
+    cursor: pointer;
+    align-items: center;
+    -webkit-appearance: none;
+    background-color: var(--purple-color);
+    border: 1px solid var(--purple-color);
+    border-radius: 3px;
+    box-sizing: content-box;
+    color: var(--white-color);
+    display: inline-flex;
+    font-size: 12px;
+    font-weight: 600;
+    font-family: inherit;
+    justify-content: center;
+    letter-spacing: .15px;
+    line-height: 16px;
+    margin: 0;
+    min-height: 18px;
+    outline: none;
+    padding: 7px 18px;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition-duration: 300ms;
+    transition-property: background-color,border-color,color;
+    vertical-align: top;
+}
+
+.button–-disabled {
+    pointer-events: none;
+    opacity: 0.5;
+    cursor: default;
 }
