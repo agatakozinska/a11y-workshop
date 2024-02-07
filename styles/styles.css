@@ -15,6 +15,16 @@
     margin: 50px auto;
 }
 
+.container h3 {
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.heading {
+    font-weight: bold;
+    font-size: 25px;
+}
+
 .button {
     cursor: pointer;
     align-items: center;

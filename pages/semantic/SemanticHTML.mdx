@@ -1,0 +1,39 @@
+# Semantic HTML
+
+HTML is a major part of building an accessible website. It provides meaningful structure to web content, allowing screen readers to accurately interpret and convey the information to users and ensures that all interactive elements, such as links and form controls, are accessible via keyboard navigation.
+
+Do not use generic elements like `div` or `span` if HTML has native element for this! There are numerous structural and grouping elements you can use to build a semantic outline and there are another to a ton of elements that provide interactive functionality.
+
+
+## Example of the bad structure :)
+
+<br />
+<img src="/divsoup.png" alt="Example of div soup" />
+
+
+## How Assistive Technology sees semantic elements
+
+<main class="container">
+	<section aria-label="semantic matter">
+		<header><h3>Heading</h3></header>
+		<p>Content inside main > section</p>
+	</section>
+</main>
+
+## How Assistive Technology sees generic elements
+
+<div class="container">
+	<div>
+		<div aria-label="semantic matter"><span class="heading">Heading</span></div>
+		<div>Content inside divs</div>
+	</div>
+</div>
+
+## Headings
+- Use `h1-h6` headings to create an overall page outline and contribute to the logical and hierarchical structure of web pages.
+
+! Common mistake: mixing headings order
+
+## Landmark elements
+- Elements like (`<nav>`, `<main>`, `<section>`, `<header>`, etc.) create the page structure. They give semantic meaning and functionality in AT.
+- Use aria-label or aria-labelledby to give unique labels to nav and section elements.
