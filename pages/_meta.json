@@ -1,10 +1,7 @@
 {
-	"index": "Introduction",
-	"advanced": "Advanced (A Folder)",
-	"about": {
-		"title": "About",
-		"type": "page"
-	},
+	"index": "Agenda",
+	"intro": "Introduction",
+	"component": "Elooo",
 	"contact": {
 		"title": "Contact ↗",
 		"type": "page",

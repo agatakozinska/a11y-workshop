@@ -1,7 +1,7 @@
 export default {
-	logo: <span>My Nextra Documentation</span>,
+	logo: <span>Fandom Accessibility Primer</span>,
 	project: {
-		link: 'https://github.com/shuding/nextra'
+		link: ''
 	}
 	// ... other theme options
 }

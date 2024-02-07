@@ -1,0 +1,11 @@
+:root {
+    --yellow-color: #ffc500;
+}
+
+.test {
+    color: red;
+}
+
+.link {
+    color: var(--yellow-color);
+}
