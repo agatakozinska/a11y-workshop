@@ -1,0 +1,36 @@
+# How to do accessibility checks?
+
+The is no one, simple way to do accessibility checks. To make sure, that the page is accessible involves not some tools but also manual testing.
+
+import { Steps } from 'nextra/components'
+
+<Steps>
+	### **Use Keyboard**
+
+	- Does the tab order make sense and can I reach all controls on the page?
+	- Is there a clear focus indicator for interactive controls?
+	- Are there any offscreen elements which should not be focusable?
+	- Can you use other common key commands like the Arrow keys, Escape key, Space key?
+
+	### **Use Screen Reader**
+
+	- Can I traverse the page with a screen reader without getting stuck?
+	- Is there appropriate alt text on images?
+	- Do custom controls work with a screen reader?
+	- Is the user alerted about a new content added to the page?
+	- Do we have appropriate headings?
+	- What about landmark?
+
+	### **Open DevTools or Extensions**
+
+	- Are the checks passing?
+	- Is text high contrast enough to be legible?
+	- Are the items visible in the different mode?
+	- Ensure animation and motion can be turned off with Reduced Motion
+
+	### **Gather missing transcripts or captions**
+
+	- Make note of any missing transcripts, captions, and other alternative content.
+	- Ensure media players and pages can accommodate this content.
+
+</Steps>

@@ -2,5 +2,6 @@
 	"index": "Home",
 	"intro": "Introduction",
 	"semantic": "Accessible HTML",
-	"aria": "ARIA"
+	"aria": "ARIA",
+	"debugging": "Debugging"
 }

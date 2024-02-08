@@ -1,0 +1,42 @@
+# Screed Readers
+
+Screen readers (a type of Assistive Technology) are both software and hardware that people use to interact with a computer. They convert text and graphics on a screen to speech or Braille output.
+
+For Mac computers and phones with iOS system we have already built-in screen reader called VoiceOver. On Windows, users can employ the built-in screen reader Narrator or install third-party software like NVDA or JAWS.
+
+## VO control keys
+
+- Turn on keys: Command (⌘) key + Fn F5 on a laptop
+- Activation keys (VO): Control + Option
+- VoiceOver Rotor: VO + U
+- Silence: Control key
+- Navigation: next item (VO + right arrow key), previous item (VO + left arrow key)
+- VoiceOver Utility: Command (⌘) key + Fn F8
+
+<br />
+<a class="link" href="https://media.dequeuniversity.com/en/courses/generic/testing-screen-readers/2.0/docs/voiceover-macos-guide.pdf" target="_blank"> Cheatsheet</a>
+
+
+## Alt text
+
+Alternative text provides a description to an image on a page. Alt text is read aloud to people using screen readers, providing **essential context**.
+
+<div class="container">
+
+<img src="/IMG_20221207_160555.jpg" alt="IMG_20221207_160555" />
+
+<img src="/IMG_20221207_160555.jpg" alt="Foxes team looking at the code during the hackathon" />
+</div>
+
+```html
+<img src="/IMG_20221207_160555.jpg" alt="IMG_20221207_160555" />
+
+<img src="/IMG_20221207_160555.jpg" alt="Foxes team looking at the code during the hackathon" />
+```
+
+Do **not** only satisfy a11y automatic checks!
+
+## Demo
+
+<br />
+<a class="link" href="https://shop.polymer-project.org/detail/ladies_outerwear/Ladies+Pullover+L+S+Hood">Checkout: Aria-live demo</a>
