@@ -23,6 +23,24 @@ strong {
     margin: 50px auto;
 }
 
+.container--wide {
+    width: 55%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.image-profile {
+    max-width: 150px;
+}
+
+.image--circle {
+    border-radius: 50%;
+}
+
+.container .profile {
+    font-size: 20px;
+}
+
 .container h3 {
     font-weight: bold;
     font-size: 25px;
