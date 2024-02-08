@@ -1,7 +1,12 @@
 :root {
     --yellow-color: #ffc500;
+    --red-color: #fa005a;
     --purple-color: #520044;
     --white-color: #fff;
+}
+
+strong {
+    color: var(--red-color);
 }
 
 .link {
@@ -56,4 +61,22 @@
     pointer-events: none;
     opacity: 0.5;
     cursor: default;
+}
+
+blockquote {
+    margin: 20px 0;
+}
+
+blockquote p {
+    padding: 15px;
+    background: rgba(15, 86, 198, 0.15);
+    border-radius: 5px;
+}
+
+blockquote p::before {
+    content: '\201C';
+}
+
+blockquote p::after {
+    content: '\201D';
 }

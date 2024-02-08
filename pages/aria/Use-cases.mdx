@@ -1,0 +1,57 @@
+import { Callout } from 'nextra/components'
+
+# The most common use cases
+
+The full list you'll find in the <a class="link" href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Attributes">MDN documentation</a>
+
+## aria-label
+
+<br />
+<button aria-label="Next"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></button>
+
+```html
+<button aria-label="Next"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></button>
+```
+
+## aria-labelledby
+
+```html
+<section aria-labelledby="section-heading-2">
+    <h2 id="section-heading-2">Section heading</h2>
+</section>
+```
+
+Both `aria-labelledby` and `aria-describedby` take an ID as a value that matches another element on the page to define an accessible name.
+
+## aria-expanded & aria-controls
+
+
+```html
+<button aria-expanded="false" aria-controls="widget1">Show widget</button>
+<div id="widget1">Content</div>
+```
+
+- `aria-expanded` - indicates if controlled elements are displayed or hidden
+- `aria-controls` - identifies the element (or elements) whose contents or presence are controlled by the element on which this attribute is set
+
+## aria-hidden
+
+It can be used to hide non-interactive content from the accessibility API.
+
+<Callout type="warning" emoji="⚠️">
+	Do not use aria-hidden="true" on focusable elements.
+</Callout>
+
+- `inert` - it's a global attribute, it makes the browser to ignore this element and all element's descendants. It can be added to elements that should be offscreen or hidden or also to sections of content that should not be interactive.
+
+## aria-live
+
+The global aria-live attribute indicates that an element will be updated, and describes the types of updates.
+There are two major “levels” of live regions: assertive and polite. Assertive will interrupt other announcements in a time-sensitive way, while polite will wait until other announcements in the queue have completed.
+
+
+```html
+<div id="announce" aria-live="polite">
+  <p>This message is announced.</p>
+</div>
+```

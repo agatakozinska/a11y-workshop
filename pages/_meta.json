@@ -2,6 +2,7 @@
 	"index": "Agenda",
 	"intro": "Introduction",
 	"semantic": "Accessible HTML",
+	"aria": "ARIA",
 	"component": "Elooo",
 	"contact": {
 		"title": "Contact ↗",
