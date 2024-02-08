@@ -3,6 +3,43 @@
 import {ImposterButton} from '../../components/ImposterButton';
 
 <div class="container">
-	<button class="button" onClick={() => alert("Hello, I'm semantic!")}>Hello</button>
+	<button class="button" onClick={() => alert("Hello, I'm semantic button!")}>Hello</button>
 	<ImposterButton />
 </div>
+
+<hr />
+
+```html
+<button class="button" onClick={() => alert("Hello, I'm semantic button!")}>Hello</button>
+```
+
+<div class="container">**VS**</div>
+
+
+```jsx
+export const ImposterButton = ({ disabled }) => {
+    const onClick = () => {
+        alert('Hello, , I\'m imposter button!');
+    }
+
+    const onKeyDown = (event) => {
+        event.preventDefault();
+        if (event.key === 'Enter' || event.key === ' ') {
+            onClick();
+        }
+    }
+
+    return(
+        <div
+            onClick={onClick}
+            role='button'
+            tabIndex={disabled ? -1 : 0}
+            onKeyDown={onKeyDown}
+            className={`button ${disabled ? 'button--disabled' : ''}`}
+            aria-disabled={disabled}
+        >
+            Hello
+        </div>
+    );
+};
+```
