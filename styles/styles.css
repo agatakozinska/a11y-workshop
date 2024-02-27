@@ -19,7 +19,7 @@ strong {
 .container {
     display: flex;
     gap: 20px;
-    max-width: 300px;
+    max-width: 360px;
     margin: 50px auto;
 }
 
@@ -35,6 +35,10 @@ strong {
 
 .image-profile {
     max-width: 150px;
+}
+
+.container .image-profile  {
+    height: unset;
 }
 
 .image--circle {
